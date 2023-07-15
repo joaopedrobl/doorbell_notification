@@ -66,9 +66,8 @@ void setup() {
 void loop() {
   
   if(digitalRead(motionSensor)){
-    bot.sendMessage(CHAT_ID, "The test was a success!!", "");
+    bot.sendMessage(CHAT_ID, "O Interfone está tocando!!", "");
     Serial.println("Button Pressed");
-    motionDetected = false;
     delay(5000);
   }
 }
